@@ -22,8 +22,8 @@ ADMIN_EMAIL: user@example.com
 ADMIN_PASSWORD: changeme
 ROLES: [admin, silver, gold, platinum]
 RAILS_SECRET_KEY: 'two hundred and fifty six bit key'
-STRIPE_API_KEY: Your_Stripe_API_key
-STRIPE_PUBLIC_KEY: Your_Stripe_Public_Key
+STRIPE_API_KEY: sk_test_FF8F82ixdssyXKIUqOCVPFoK
+STRIPE_PUBLIC_KEY: pk_test_9SbSyyszuAfZ8zMfy397VslW
 AMAZON_ACCESS_KEY: Your_Amazon_Access_Key
 AMAZON_SECRET_KEY: Your_Amazon_Secret_Key
 GITHUB_OWNER: 'bastosmichael'
