@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 require 'rubygems'
 require 'spork'
 #uncomment the following line to use spork with the debugger
@@ -87,7 +90,7 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
-  
+
   config.before(:suite) do
     DatabaseCleaner.strategy = :truncation
   end

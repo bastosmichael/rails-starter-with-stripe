@@ -44,6 +44,7 @@ group :development do
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'quiet_assets'
   gem 'rails_layout'
+  gem 'rubocop', require: false
 end
 
 group :test do
@@ -59,6 +60,7 @@ group :test do
   gem "guard-livereload"
   gem "guard-cucumber"
   gem "guard-spork"
+  gem 'simplecov', :require => false
 end
 
 group :production do

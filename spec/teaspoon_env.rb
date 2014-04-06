@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 # This file allows you to override various Teaspoon configuration directives when running from the command line. It is not
 # required from within the Rails environment, so overriding directives that have been defined within the initializer
 # is not possible.
