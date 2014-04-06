@@ -1,0 +1,14 @@
+bundler_args: --without development --deployment
+cache: bundler
+language: ruby
+rvm:
+  - "2.1.1"
+before_script:
+  - cp config/database.example.sqlite.yml config/database.yml
+  - bundle exec rake db:create
+  - bundle exec rake db:migrate
+script:
+  - HEADLESS=true bundle exec rake
+branches:
+  only:
+    - master
