@@ -37,5 +37,8 @@ RailsStripeMembershipSaas::Application.configure do
 
   # ActionMailer Config
   config.action_mailer.default_url_options = { :host => 'example.com' }
-
 end
+
+# For Travis testing only...
+ENV["STRIPE_API_KEY"] = 'sk_test_SvL5TV9ZcenfzLN2FbymaNv3'
+ENV["STRIPE_PUBLIC_KEY"] = 'pk_test_tZg3HppxBWt4IVid0EYLtThN'
