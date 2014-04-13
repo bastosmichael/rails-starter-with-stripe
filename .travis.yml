@@ -12,3 +12,5 @@ script:
 branches:
   only:
     - master
+notifications:
+  slack: bastos:0lU4rSmtdKsiNkxLwCbnOaQX#pricels-development
