@@ -11,7 +11,7 @@ script:
   - HEADLESS=true bundle exec rake
 branches:
   only:
-    - /^\\d+\\.\\d+$/
+    - /^\d+\.\d+$/
 notifications:
   slack: bastos:0lU4rSmtdKsiNkxLwCbnOaQX#pricels-development
 env:
