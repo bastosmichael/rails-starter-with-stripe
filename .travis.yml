@@ -11,6 +11,17 @@ script:
   - HEADLESS=true bundle exec rake
 branches:
   only:
-    - master
+    - /^\\d+\\.\\d+$/
 notifications:
   slack: bastos:0lU4rSmtdKsiNkxLwCbnOaQX#pricels-development
+env:
+  global:
+  - secure: R7ZuTV6KlslGd8MPrrsvD0/ZviNAv6Ev1k2NGpu9/ZBulrfBd1IGk+cP01Mx0+rzSC0LWkqQXCDb2nPxhMOwLfViHuBFqlFVzlueEdUia3IX8C2uUTbNhxJYzF8wl6LC2I9KE88FawsaUX0nrxsyXJXeTKIlDIaQOgzfN8bzmY0=
+after_success:
+  - if [ $TRAVIS_PULL_REQUEST == "false" ]; then
+  -   git config --global user.email "bastosmichael@gmail.com"
+  -   git config --global user.name "travis-ci"
+  -   git pull --rebase origin master
+  -   git remote set-url origin "https://${GH_TOKEN}@github.com/bastosmichael/rails-4-stripe-saas.git"
+  -   git push origin master
+  - fi
