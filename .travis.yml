@@ -22,6 +22,6 @@ after_success:
   -   git config --global user.email "bastosmichael@gmail.com"
   -   git config --global user.name "travis-ci"
   -   git pull --rebase origin master
-  -   git remote set-url origin "https://${GH_TOKEN}@github.com/bastosmichael/rails-4-stripe-saas.git"
+  -   git remote set-url origin "https://${GH_TOKEN}@github.com/bastosmichael/rails-starter-with-stripe.git"
   -   git push origin master
   - fi
