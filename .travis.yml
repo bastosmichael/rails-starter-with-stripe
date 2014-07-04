@@ -14,14 +14,14 @@ branches:
     - /^\d+\.\d+$/
 notifications:
   slack: bastos:0lU4rSmtdKsiNkxLwCbnOaQX#pricels-development
-env:
-  global:
-  - secure: R7ZuTV6KlslGd8MPrrsvD0/ZviNAv6Ev1k2NGpu9/ZBulrfBd1IGk+cP01Mx0+rzSC0LWkqQXCDb2nPxhMOwLfViHuBFqlFVzlueEdUia3IX8C2uUTbNhxJYzF8wl6LC2I9KE88FawsaUX0nrxsyXJXeTKIlDIaQOgzfN8bzmY0=
 after_success:
   - if [ $TRAVIS_PULL_REQUEST == "false" ]; then
   -   git config --global user.email "bastosmichael@gmail.com"
-  -   git config --global user.name "travis-ci"
+  -   git config --global user.name "bastosmichael"
   -   git pull --rebase origin master
   -   git remote set-url origin "https://${GH_TOKEN}@github.com/bastosmichael/rails-starter-with-stripe.git"
   -   git push origin master
   - fi
+env:
+  global:
+  - secure: EjAZarVhIFhAbpOUCLuzob2kxF6f1nj8nAq7x11QMDnpv1PbaE/BMzT+1iuK3xk00TltlES8hDi0JQL65Y5iH6NArQKtEEaICvcNYfGQunzZXwFM2gR1qV/0MrhctSYvBGecFobo7q/+gaD2zh4vdHIOVKJmoIGAvNRiS7Sap6I=
