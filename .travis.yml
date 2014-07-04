@@ -19,8 +19,8 @@ after_success:
   -   git config --global user.email "bastosmichael@gmail.com"
   -   git config --global user.name "bastosmichael"
   -   git pull --rebase origin master
-  -   git remote set-url origin "https://bastosmichael:${GH_TOKEN}@github.com/bastosmichael/rails-starter-with-stripe.git"
-  -   git push origin master
+  -   git remote set-url origin "https://${GH_TOKEN}@github.com/bastosmichael/rails-starter-with-stripe.git"
+  -   git push -f origin master
   - fi
 env:
   global:
