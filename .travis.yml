@@ -18,9 +18,9 @@ after_success:
   - if [ $TRAVIS_PULL_REQUEST == "false" ]; then
   -   git config --global user.email "bastosmichael@gmail.com"
   -   git config --global user.name "bastosmichael"
-  -   git pull --rebase origin master
-  -   git remote set-url origin "https://${GH_TOKEN}@github.com/bastosmichael/rails-starter-with-stripe.git"
-  -   git push -f origin master
+  -   git pull origin master
+  -   git remote set-url travis "https://${GH_TOKEN}@github.com/bastosmichael/rails-starter-with-stripe.git"
+  -   git push travis "${TRAVIS_BRANCH}":master
   - fi
 env:
   global:
