@@ -19,7 +19,7 @@ after_success:
   -   git config --global user.email "bastosmichael@gmail.com"
   -   git config --global user.name "bastosmichael"
   -   git pull origin master
-  -   git remote set-url travis "https://${GH_TOKEN}@github.com/bastosmichael/rails-starter-with-stripe.git"
+  -   git remote add travis "https://${GH_TOKEN}@github.com/bastosmichael/rails-starter-with-stripe.git"
   -   git push travis "${TRAVIS_BRANCH}":master
   - fi
 env:
