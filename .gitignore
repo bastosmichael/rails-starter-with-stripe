@@ -76,3 +76,4 @@ pickle-email-*.html
 /config/application.yml
 
 db/sites
+config/vhost.conf
