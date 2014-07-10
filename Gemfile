@@ -22,7 +22,6 @@ gem 'sinatra', require: false
 gem 'slim'
 gem 'will_paginate-bootstrap'
 gem 'resque', :require => "resque/server"
-gem 'party_foul'
 gem 'awesome_print'
 gem 'sqlite3'
 
