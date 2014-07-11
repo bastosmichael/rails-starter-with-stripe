@@ -22,8 +22,8 @@ gem 'sinatra', require: false
 gem 'slim'
 gem 'will_paginate-bootstrap'
 gem 'resque', :require => "resque/server"
-gem 'party_foul'
-gem "awesome_print"
+gem 'awesome_print'
+gem 'sqlite3'
 
 group :assets do
   gem 'sass-rails'
@@ -36,7 +36,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'teaspoon'
-  gem 'sqlite3'
 end
 
 group :development do
