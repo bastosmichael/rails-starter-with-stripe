@@ -14,7 +14,10 @@ branches:
   only:
     - /^\d+\.\d+$/
 notifications:
-  slack: bastos:0lU4rSmtdKsiNkxLwCbnOaQX#pricels-development
+  slack:
+    rooms: 
+      - bastos:0lU4rSmtdKsiNkxLwCbnOaQX#pricels-development
+      - bastos:RC1gva2tINDySytCuLqZA5cV#skool-development
 after_success:
   - if [ $TRAVIS_PULL_REQUEST == "false" ]; then
   -   git config --global user.email "bastosmichael@gmail.com"
